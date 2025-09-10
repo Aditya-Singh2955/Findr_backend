@@ -24,11 +24,11 @@ const job = require("./route/job");
 const employer = require("./route/employer");
 const application = require("./route/application");
 
-// app.use("/api/v1", user);
-// app.use("/api/v1", upload);
-// app.use("/api/v1", job);
-// app.use("/api/v1", employer);
-// app.use("/api/v1", application);
+app.use(user);
+app.use(upload);
+app.use(job);
+app.use(employer);
+app.use(application);
 app.listen(PORT, () => {
   console.log(`App is Listening at ${PORT}`);
 });
